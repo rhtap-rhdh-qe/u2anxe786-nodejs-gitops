@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: u2anxe786-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: u2anxe786-nodejs 
+  name: u2anxe786-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: u2anxe786-nodejs 
